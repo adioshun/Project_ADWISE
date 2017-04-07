@@ -11,7 +11,7 @@ Advanced Drive Warning-Information System for the Elderly
 
 ## April 
 ### Week 1
-- <del> System Setup (OS, ROS, OpenCV, TensorFlow) </del>
+- <del> System Setup (OS, ROS, OpenCV, TensorFlow) : [[Ref]](https://github.com/adioshun/Project_ADWISE/wiki/System-Setting)</del>
 - OBD Foramt 
 
 ### Week 2
