@@ -7,10 +7,13 @@ Advanced Drive Warning-Information System for the Elderly
 - <del> Planning </del>
 - <del> Device Purchase </del>
 
-## April Week 1
+---
+
+## April 
+### Week 1
 - <del> System Setup (OS, ROS, OpenCV, TensorFlow) </del>
 - OBD Foramt 
 
-## April Week 2
+### Week 2
 - OBD Installation 
 - OBD Connection 
