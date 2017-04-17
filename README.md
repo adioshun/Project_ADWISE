@@ -16,4 +16,10 @@ Advanced Drive Warning-Information System for the Elderly
 
 ### Week 2
 - <del> OBD Installation </del>
-- OBD Connection 
+- OBD Communication
+- <del> Raspberry Installation </del>
+
+### Week 3 
+- Data Storage(file)
+- <del> Raspberry Installation </del>
+
