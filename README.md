@@ -26,4 +26,5 @@ Advanced Drive Warning-Information System for the Elderly
 
 > IMPORTANT: The xmin, xmax, ymin and ymax values were marked incorrectly in the Udacity data, so I corrected them. This correction can be found in the code block where data frames are defined. Further, as data from two sources are combined, the column names were modified to match.
 
-
+![](https://github.com/udacity/self-driving-car/raw/master/annotations/images/crowdai.png)
+![](https://github.com/udacity/self-driving-car/raw/master/annotations/images/auttico.png)
