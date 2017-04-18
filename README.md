@@ -1,7 +1,7 @@
 # ADWISE
 Advanced Drive Warning-Information System for the Elderly
 
-![](http://i.imgur.com/PrqGzAR.png)
+
 
 ## Folder 
 - trainData 
@@ -25,22 +25,3 @@ Advanced Drive Warning-Information System for the Elderly
 > IMPORTANT: The xmin, xmax, ymin and ymax values were marked incorrectly in the Udacity data, so I corrected them. This correction can be found in the code block where data frames are defined. Further, as data from two sources are combined, the column names were modified to match.
 
 
-## March Week 4 
-- <del> Planning </del>
-- <del> Device Purchase </del>
-
----
-
-## April 
-### Week 1
-- <del> System Setup (OS, ROS, OpenCV, TensorFlow) : [[Ref]](https://github.com/adioshun/Project_ADWISE/wiki/System-Setting)</del>
-- <del> OBD Foramt </del> 
-
-### Week 2
-- <del> OBD Installation </del>
-- <del> Raspberry Installation </del>
-- OBD Communication
-
-### Week 3 
-- <del> Raspberry Installation </del>
-- Data Storage(file)
