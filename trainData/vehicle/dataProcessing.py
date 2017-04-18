@@ -50,9 +50,9 @@ df_vehicles1.head()
 
 
 dir = "/home/adioshun/datasets/vehicle/Autti/object-dataset"
-df_files2 = pd.read_csv(dir+'/labels.csv', header=0)
+df_files2 = pd.read_csv(dir+'/new_Autti_labels.csv', header=0)
 
-df_files2.columns= ['Frame',  'xmin', 'xmax', 'ymin','ymax', 'RM', 'Label']
+
 df_vehicles2 = df_files2[(df_files2['Label']=='car') | (df_files2['Label']=='truck')].reset_index()
 df_vehicles2 = df_vehicles2.drop('index', 1)
 df_vehicles2 = df_vehicles2.drop('RM', 1)
