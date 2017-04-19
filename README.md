@@ -1,3 +1,8 @@
+
+<img src="https://docs.google.com/drawings/d/1xSuijiu-CvhSJvg79Gl82rKOAH6X8lPy-HQkul30kFs/pub?w=960&amp;h=720">
+
+[System Diagram_Google Draw](https://docs.google.com/drawings/d/1xSuijiu-CvhSJvg79Gl82rKOAH6X8lPy-HQkul30kFs/edit?usp=sharing)
+
 # ADWISE
 Advanced Drive Warning-Information System for the Elderly
 
@@ -6,11 +11,9 @@ Advanced Drive Warning-Information System for the Elderly
 ## Folder 
 - trainData 
 	- vehicle
-    	- [udacity](https://www.udacity.com/) : Dataset provided by Udacity [[vehicle]](https://s3.amazonaws.com/udacity-sdc/Vehicle_Tracking/vehicles.zip), [[non-vehicle]](https://s3.amazonaws.com/udacity-sdc/Vehicle_Tracking/non-vehicles.zip) 
-        - [CrowdAI](http://crowdai.com/) : Car, Truck, Pedestrian, [object-detection-crowdai.tar.gz(1.5G)](http://bit.ly/udacity-annoations-crowdai)
-        - [Autti](http://autti.co/) : Car, Truck, Pedestrian, Streat Light, [object-dataset.tar.gz(3.3G)](http://bit.ly/udacity-annotations-autti)
 	- trafficSign
-    - trafficLight
-
+	- trafficLight
+- inputData
+- resultData
 
 
