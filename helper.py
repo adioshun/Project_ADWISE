@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
 
 import numpy as np
 import cv2
@@ -9,3 +12,9 @@ def draw_boxes(img, bboxes, color=(0, 0, 255), thick=6):
     return imcopy
 
 
+
+def show_image(fig, i, img, title, cmap=None):
+    a = fig.add_subplot(2, 2, i)
+    plt.imshow(img, cmap)
+    a.set_title(title)
+    return i + 1

@@ -1,4 +1,7 @@
-from settings import PROJECT_DIR, TRAINDATA_DIR
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+from settings import VEHICLE_LIST_DUMP, TRAINDATA_DIR
 
 # udacity data handling 1 
 import os
@@ -8,12 +11,12 @@ import pandas as pd
 from itertools import chain
 feed = lambda pattern, y: ((f, y) for f in glob.glob(pattern))
 
-os.getcwd()
-os.chdir(PROJECT_DIR)
-Allfilename = list(chain(feed(TRAINDATA_DIR+"vehicle/udacity/vehicles/**/*.png",1),feed(TRAINDATA_DIR+"vehicle/udcity/non-vehicles/**/*.png",0))) #total : 8,792
-
-
-xdata = np.zeros((18458,3528)).astype('float32') #3528=len(feat2)
+#os.getcwd()
+#os.chdir(PROJECT_DIR)
+#Allfilename = list(chain(feed(TRAINDATA_DIR+"vehicle/udacity/vehicles/**/*.png",1),feed(TRAINDATA_DIR+"vehicle/udcity/non-vehicles/**/*.png",0))) #total : 8,792
+#
+#
+#xdata = np.zeros((18458,3528)).astype('float32') #3528=len(feat2)
 
 # udacity data handling 2
 
@@ -40,7 +43,7 @@ np_vehicles = np.concatenate((nonvehicle, vehicle), axis=0)
 df_vehicles = pd.DataFrame(np_vehicles)
 df_vehicles.columns =['File_Path','Label']
 
-df_vehicles.to_csv(PROJECT_DIR+"df_vehicles.csv", index = False)
+df_vehicles.to_csv(VEHICLE_LIST_DUMP, index = False)
 
 
 

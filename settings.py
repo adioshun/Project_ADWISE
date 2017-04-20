@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
 from datetime import datetime
 
 PROJECT_DIR = "/home/adioshun/Github/Project_ADWISE/"
@@ -6,8 +9,8 @@ TESTDATA_DIR = "/home/adioshun/Github/Project_ADWISE/testData/"
 INPUTDATA_DIR = "/home/adioshun/Github/Project_ADWISE/inputData/"
 RESULT_DIR = "/home/adioshun/Github/Project_ADWISE/resultData/"
 
-CV_CLF_DUMP = INPUTDATA_DIR+'cv_clf_'+datetime.now().strftime('%Y%m%d')+'.pkl'
-
+VEHICLE_CV_CLF_DUMP = INPUTDATA_DIR+'vehicle/vehicle_cv_clf_'+datetime.now().strftime('%Y%m%d')+'.pkl'
+VEHICLE_LIST_DUMP = INPUTDATA_DIR+'vehicle/vehicle_list_'+datetime.now().strftime('%Y%m%d')+'.csv'
 
 
 TEST_VIDEO = TESTDATA_DIR+'project_video.mp4'#"test_video.mp4"

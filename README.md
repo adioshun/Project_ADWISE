@@ -8,12 +8,15 @@ Advanced Drive Warning-Information System for the Elderly
 
 
 
-## Folder 
-- trainData 
+## Folder
+- trainData
 	- vehicle
 	- trafficSign
 	- trafficLight
 - inputData
-- resultData
-
-
+	- vehicle : cv_clf_*.pkl, df_vehicles.csv
+	- lane : calibration 
+	- trafficSign
+	- trafficLight
+- resultData(Symbol Link) : Video clips
+- testData(Symbol Link) : Video clips for test

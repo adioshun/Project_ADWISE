@@ -8,14 +8,34 @@ Created on Thu Apr 20 08:16:43 2017
 
 
 from settings import TEST_VIDEO, RESULT_VIDEO
-from slidingWindowSearch import pred_window
+from vehicle_slidingWindowSearch import vehicle_cv_detection
 
+from lane_cv_detection import lane_cv_detector
 
 from moviepy.editor import VideoFileClip
-from moviepy.editor import CompositeVideoClip
 
 
-clip1 = VideoFileClip(TEST_VIDEO)
-vid_clip = clip1.fl_image(pred_window) #NOTE: this function expects color images!!
-vid_clip.write_videofile(RESULT_VIDEO, audio=False)
 
+clip = VideoFileClip(TEST_VIDEO)
+vehicle_clip = clip.fl_image(vehicle_cv_detection) #NOTE: this function expects color images!!
+
+
+
+lane_clip = clip.fl_image(lane_cv_detector) #NOTE: this function expects color images!!
+
+
+
+vehicle_clip.write_videofile(RESULT_VIDEO, audio=False)
+
+
+
+# Clip videos together.
+# clip1 = VideoFileClip("bin-opt.mp4")
+# clip2 = VideoFileClip("bin-opt-raw.mp4")
+# clip3 = clip2.resize(0.25)
+# clip4 = VideoFileClip('peaks-opt.mp4')
+# clip5 = clip4.resize(0.25)
+# video = CompositeVideoClip([clip1,
+#                            clip3.set_pos((480,360)),
+#                            clip5.set_pos((480,180))])
+# %time video.write_videofile('composite.mp4', audio=False)
