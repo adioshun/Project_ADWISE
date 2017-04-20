@@ -7,3 +7,5 @@ def draw_boxes(img, bboxes, color=(0, 0, 255), thick=6):
     for bbox in bboxes:
         cv2.rectangle(imcopy, bbox[0], bbox[1], color, thick)
     return imcopy
+
+
