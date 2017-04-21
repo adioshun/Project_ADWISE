@@ -1,0 +1,28 @@
+Traceback (most recent call last):
+  File "/home/adioshun/miniconda3/envs/python3/lib/python3.6/site-packages/spyder/app/mainwindow.py", line 2999, in main
+    mainwindow = run_spyder(app, options, args)
+  File "/home/adioshun/miniconda3/envs/python3/lib/python3.6/site-packages/spyder/app/mainwindow.py", line 2901, in run_spyder
+    main.setup()
+  File "/home/adioshun/miniconda3/envs/python3/lib/python3.6/site-packages/spyder/app/mainwindow.py", line 824, in setup
+    self.findinfiles = FindInFiles(self)
+  File "/home/adioshun/miniconda3/envs/python3/lib/python3.6/site-packages/spyder/plugins/findinfiles.py", line 52, in __init__
+    include = self.include_patterns()
+  File "/home/adioshun/miniconda3/envs/python3/lib/python3.6/site-packages/spyder/plugins/findinfiles.py", line 105, in include_patterns
+    for ext in get_edit_extensions():
+  File "/home/adioshun/miniconda3/envs/python3/lib/python3.6/site-packages/spyder/config/utils.py", line 140, in get_edit_extensions
+    edit_filetypes = get_edit_filetypes()
+  File "/home/adioshun/miniconda3/envs/python3/lib/python3.6/site-packages/spyder/config/utils.py", line 118, in get_edit_filetypes
+    pygments_exts = _get_pygments_extensions()
+  File "/home/adioshun/miniconda3/envs/python3/lib/python3.6/site-packages/spyder/config/utils.py", line 85, in _get_pygments_extensions
+    for lx in lexers.get_all_lexers():
+  File "/home/adioshun/miniconda3/envs/python3/lib/python3.6/site-packages/pygments/lexers/__init__.py", line 53, in get_all_lexers
+    for lexer in find_plugin_lexers():
+  File "/home/adioshun/miniconda3/envs/python3/lib/python3.6/site-packages/pygments/plugin.py", line 53, in find_plugin_lexers
+    yield entrypoint.load()
+  File "/home/adioshun/miniconda3/envs/python3/lib/python3.6/site-packages/pkg_resources/__init__.py", line 2301, in load
+    self.require(*args, **kwargs)
+  File "/home/adioshun/miniconda3/envs/python3/lib/python3.6/site-packages/pkg_resources/__init__.py", line 2324, in require
+    items = working_set.resolve(reqs, env, installer, extras=self.extras)
+  File "/home/adioshun/miniconda3/envs/python3/lib/python3.6/site-packages/pkg_resources/__init__.py", line 854, in resolve
+    raise DistributionNotFound(req, requirers)
+pkg_resources.DistributionNotFound: The 'jedi>=0.10' distribution was not found and is required by the application
