@@ -7,8 +7,8 @@ Created on Thu Apr 20 08:16:43 2017
 """
 
 
-from settings import TEST_VIDEO, RESULT_VIDEO
-from vehicle_slidingWindowSearch import vehicle_cv_detection
+from settings import TEST_VIDEO, RESULT_VIDEO, RESULT_VIDEO2
+from vehicle_cv_detection import vehicle_cv_detector
 
 from lane_cv_detection import lane_cv_detector
 
@@ -16,16 +16,20 @@ from moviepy.editor import VideoFileClip
 
 
 
+
 clip = VideoFileClip(TEST_VIDEO)
-vehicle_clip = clip.fl_image(vehicle_cv_detection) #NOTE: this function expects color images!!
-
-
-
 lane_clip = clip.fl_image(lane_cv_detector) #NOTE: this function expects color images!!
 
 
+clip = VideoFileClip(TEST_VIDEO)
+vehicle_clip = clip.fl_image(vehicle_cv_detector) #NOTE: this function expects color images!!
 
-vehicle_clip.write_videofile(RESULT_VIDEO, audio=False)
+
+vehicle_clip.write_videofile(RESULT_VIDEO2, audio=False)
+
+
+
+
 
 
 
