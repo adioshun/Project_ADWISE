@@ -24,9 +24,13 @@ Advanced Drive Warning-Information System for the Elderly
 - testData(Symbol Link) : Video clips for test
 
 ├── evaluation.py # evaluation.py
+
 ├── images # model architectures
+
 │   ├── resnet.png
+
 │   ├── vggnet5.png
+
 │   └── vggnet.png
 
 ├── MNIST # mnist data (not included in this repo)
